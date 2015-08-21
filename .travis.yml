@@ -1,0 +1,7 @@
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - libqt5webkit5-dev
+    - qtdeclarative5-dev
