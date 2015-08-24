@@ -2,13 +2,9 @@ language: python
 
 sudo: required
 
-addons:
-  apt:
-    sources:
-    - ubuntu-toolchain-r-test
-    packages:
-    - gcc-4.9
-    - g++-4.9
 
+before_script:
+    - chmod -R 777 app/cache app/logs
+    
 script:
   - echo "//just create a new file :)" >> new.txt
