@@ -5,3 +5,4 @@ trials
 - trigger a build
 - trigger another build
 - more builds!
+- ALL the builds
