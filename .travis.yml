@@ -1,9 +1,11 @@
 
 sudo: false
-
+language: python
 addons:
   apt:
     sources:
-      - elasticsearch-1.7
+      - elasticsearch-1.6
     packages:
       - elasticsearch
+script:
+   - echo hola
