@@ -8,4 +8,5 @@ addons:
     packages:
       - elasticsearch
 script:
+   - elasticsearch -v
    - echo hola
