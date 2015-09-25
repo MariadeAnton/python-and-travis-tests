@@ -1,10 +1,10 @@
+
+sudo: false
 language: python
 
-sudo: required
-
-
-before_script:
-    - chmod -R 777 app/cache app/logs
-    
-script:
-  - echo "//just create a new file :)" >> new.txt
+addons:
+  apt:
+    sources:
+      - elasticsearch-1.7
+    packages:
+      - elasticsearch
