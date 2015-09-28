@@ -18,3 +18,6 @@ matrix:
             - g++-5
           sources:
             - ubuntu-toolchain-r-test
+
+script:
+    - echo hola
