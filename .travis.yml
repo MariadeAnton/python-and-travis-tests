@@ -14,9 +14,7 @@ matrix:
     - os: linux
       addons:
         apt:
-          sources:
-            - ubuntu-toolchain-r-test
           packages:
             - g++-5
-
+          sources:
             - ubuntu-toolchain-r-test
