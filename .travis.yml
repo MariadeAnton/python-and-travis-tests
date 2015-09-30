@@ -1,23 +1,6 @@
 
-sudo: false
-language: c++
-matrix:
-  include:
-    # Test clang
-    - os: linux
-      compiler: clang
-      addons:
-        apt:
-          sources:
-            - ubuntu-toolchain-r-test
-   # Test gcc
-    - os: linux
-      addons:
-        apt:
-          packages:
-            - g++-5
-          sources:
-            - ubuntu-toolchain-r-test
+sudo: required
+dist: trusty
 
 script:
     - echo hola
