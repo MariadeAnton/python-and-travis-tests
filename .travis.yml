@@ -1,10 +1,10 @@
+
 sudo: required
 dist: trusty
-​
+
 before_install:
-  - sudo apt-get update
-  - sudo apt-get install mysql-server-5.6
+    - sudo apt-get update
+    - sudo apt-get install mysql-server-5.6
 
 script:
-
-  - echo hola
+    - echo hola
