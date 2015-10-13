@@ -6,7 +6,9 @@ addons:
     packages:
     - gcc-5
     - g++-5
+    - cpp-5 
+    - libsdl2-dev 
     sources:
     - ubuntu-toolchain-r-test
 script:
-    - echo hola
+    - echo hello
