@@ -11,6 +11,9 @@ addons:
     - cpp-5 
     - libsdl2-dev
     - libsdl2-image-dev
+    
+before_install:
+  - apt-cache search libsdl2
 
 script:
     - echo hello
