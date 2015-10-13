@@ -9,9 +9,7 @@ addons:
     - gcc-5
     - g++-5
     - cpp-5 
-    - libsdl2-dev
-    - libsdl2-2.0-0
-    - libsdl2-net-dev
+    - build-dep libsdl2-dev
 
 script:
     - echo hello
