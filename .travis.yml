@@ -10,10 +10,8 @@ addons:
     - g++-5
     - cpp-5 
     - libsdl2-dev
-    - libsdl2-image-dev
-    
-before_install:
-  - apt-cache search libsdl2
+    - libsdl2-2.0-0
+    - libsdl2-dbg
 
 script:
     - echo hello
