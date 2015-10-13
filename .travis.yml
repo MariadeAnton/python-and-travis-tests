@@ -10,6 +10,7 @@ addons:
     - g++-5
     - cpp-5 
     - libsdl2-dev
+    - libsdl2-image-dev
 
 script:
     - echo hello
