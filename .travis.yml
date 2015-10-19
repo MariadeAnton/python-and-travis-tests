@@ -1,5 +1,7 @@
 
 sudo: false
+language: cpp
+compiler: gcc-5
 
 addons:
   apt:
