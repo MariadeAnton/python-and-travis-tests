@@ -1,18 +1,14 @@
-
 sudo: false
-language: cpp
-compiler: gcc-5
-
 addons:
   apt:
     sources:
-    - ubuntu-toolchain-r-test
+    - ubuntu-sdk-team
     packages:
-    - gcc-5
-    - g++-5
-    - cpp-5 
+    - libqt5webkit5-dev
+    - qtdeclarative5-dev
 
 script:
     - echo hello
     - gcc --version
     - g++ --version
+    - qmake -v
