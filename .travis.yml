@@ -5,6 +5,7 @@ addons:
     - ubuntu-sdk-team
     packages:
     - qt5-default
+    - qttools5-dev-tools
 
 script:
     - echo hello
