@@ -4,8 +4,7 @@ addons:
     sources:
     - ubuntu-sdk-team
     packages:
-    - libqt5webkit5-dev
-    - qtdeclarative5-dev
+    - qt5-default
 
 script:
     - echo hello
