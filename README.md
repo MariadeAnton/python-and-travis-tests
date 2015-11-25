@@ -9,3 +9,4 @@ trials
 - trigger another build
 - more builds!
 - ALL the builds
+- cancel a build right before it's triggered!
