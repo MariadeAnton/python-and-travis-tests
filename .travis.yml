@@ -1,14 +1,10 @@
-sudo: required
-addons:
-  apt:
-    sources:
-    - ubuntu-sdk-team
-    packages:
-    - qt5-default
-    - qttools5-dev-tools
+sudo: false
 
+addons:
+  postgresql: "9.3"
+  apt:
+    packages:
+      - imagemagick
 script:
     - echo hello
-    - gcc --version
-    - g++ --version
-    - qmake -v
+    - imagemagick --version
