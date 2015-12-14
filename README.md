@@ -4,9 +4,4 @@
 
 trials
 
-- qt5 packages: libqt5webkit5-dev qtdeclarative5-dev
-- trigger a build
-- trigger another build
-- more builds!
-- ALL the builds
-- cancel a build right before it's triggered!
+- imagemagick package 
