@@ -19,8 +19,8 @@ addons:
 before_install:
     - which gcc
     - gcc --version
-    - which gcc-4.8-base
-    - gcc-4.8-base --version
+    - which gcc-4.8
+    - gcc-4.8 --version
 
 install:
       - which $CXX
