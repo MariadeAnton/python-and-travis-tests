@@ -20,20 +20,16 @@ addons:
       - libunwind8-dev
 
 before_install:
-    - which gcc
-    - gcc --version
-    - which gcc-4.8
-    - gcc-4.8 --version
     - which $CXX
     - which $CC
     - $CXX --version
     - export CXX="g++-4.8" CC="gcc-4.8";
+    - which gcc
+    - gcc --version
+    - which gcc-4.8
+    - gcc-4.8 --version
 
 install:
-      - which gcc
-      - gcc --version
-      - which gcc-4.8
-      - gcc-4.8 --version
       - which $CXX
       - which $CC
       - $CXX --version
