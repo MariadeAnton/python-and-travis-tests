@@ -2,11 +2,10 @@ language: java
 
 sudo: false
 
-env:
-	  - CXX="g++-4.8" CC="gcc-4.8"
 addons:
   apt:
     sources:
+      - debian-sid
       - ubuntu-toolchain-r-test
     packages:
       - gcc-4.8
