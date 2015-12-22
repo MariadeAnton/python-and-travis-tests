@@ -2,7 +2,6 @@ language: java
 
 sudo: false
 
-
 addons:
   apt:
     sources:
@@ -17,12 +16,8 @@ addons:
       - pkg-config
       - zip
       - zlib1g-dev
-      - libunwind8-dev
 
 before_install:
-    - which $CXX
-    - which $CC
-    - $CXX --version
     - export CXX="g++-4.8" CC="gcc-4.8";
     - which gcc
     - gcc --version
