@@ -2,9 +2,14 @@ language: node_js
 
 sudo: false
 
-node_js:
-  - '0.12'
 
-before_install:
-  - npm install -g npm@^2
-  - npm --version
+addons:
+  apt:
+    sources:
+      - debian-sid
+    packages:
+      - libunwind8-dev
+
+install: true
+
+script: echo hola
