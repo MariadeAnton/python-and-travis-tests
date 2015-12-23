@@ -1,30 +1,22 @@
-language: java
-
-sudo: false
-
-addons:
-  apt:
-    sources:
-      - ubuntu-toolchain-r-test
-    packages:
-      - gcc-4.8
-      - g++-4.8
-      - python2.7
-      - wget
-      - pkg-config
-      - zip
-      - zlib1g-dev
-      - libunwind8
-
-before_install:
-    - which gcc
-    - gcc --version
-    - which gcc-4.8
-    - gcc-4.8 --version
-
-install:
-      - which $CXX
-      - which $CC
-      - $CXX --version
-
-script: echo hola
+language: generic
+matrix:
+  include:
+    - env: AG_VER=master
+      os: linux
+      sudo: false
+      addons: &vim74
+        apt:
+          packages:
+            - vim
+            - automake
+            - pkg-config
+            - libpcre3-dev
+            - zlib1g-dev
+      install: true
+      script: echo hola
+    - env: AG_VER=0.31.0
+      os: linux
+      sudo: false
+      addons: *vim74
+      install: true
+      script: echo hola
