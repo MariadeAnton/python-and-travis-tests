@@ -1,22 +1,11 @@
-language: generic
-matrix:
-  include:
-    - env: AG_VER=master
-      os: linux
-      sudo: false
-      addons: &vim74
-        apt:
-          packages:
-            - vim
-            - automake
-            - pkg-config
-            - libpcre3-dev
-            - zlib1g-dev
-      install: true
-      script: echo hola
-    - env: AG_VER=0.31.0
-      os: linux
-      sudo: false
-      addons: *vim74
-      install: true
-      script: echo hola
+language: php
+
+php:
+  - 7.0
+
+before_script:
+  - pear config-set preferred_state beta
+  - yes '' | pecl install apcu
+
+script:
+  - echo hola
