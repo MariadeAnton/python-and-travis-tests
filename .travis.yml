@@ -5,9 +5,7 @@ php:
   - 7.0
 
 before_install:
-  - cd ..
-  - mkdir scripts
-  - cd scripts
+  - cd /usr/local/share
   - touch hola.txt
   # - yes '' | pecl install apcu
 
