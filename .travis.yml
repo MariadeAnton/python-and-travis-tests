@@ -1,10 +1,8 @@
 sudo: false
 language: php
 
-php:
-  - 7.0
-
 before_install:
+  - chmod +x /usr/local/share
   - cd /usr/local/share
   - touch hola.txt
   # - yes '' | pecl install apcu
