@@ -5,7 +5,8 @@ php:
   - 7.0
 
 before_install:
-  - yes '' | pecl install apcu
+  - cd ..
+  # - yes '' | pecl install apcu
 
 script:
   - echo hola
