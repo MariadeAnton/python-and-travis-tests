@@ -10,4 +10,6 @@ before_script:
 
 script:
   - phpcs --version
+  - which phpcs
+  - which php
   - echo hola
