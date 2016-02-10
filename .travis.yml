@@ -5,8 +5,8 @@ before_install:
  # - yes '' | pecl install apcu
 
  before_script:
-- pear install --alldeps pear/PHP_CodeSniffer
-- phpenv rehash
+  - pear install --alldeps pear/PHP_CodeSniffer
+  - phpenv rehash
 
 script:
   - phpcs --version
