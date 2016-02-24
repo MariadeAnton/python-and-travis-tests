@@ -5,7 +5,7 @@ language: c
 addons:
   apt:
     sources:
-      - liblapacke-de
+      - debian-sid
     packages:
       - liblapack3
 
