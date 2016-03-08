@@ -1,17 +1,22 @@
 sudo: false
-language: php
-php:
-  - '7.0.2'
+language: android
 
-before_install:
- # - yes '' | pecl install apcu
+jdk: oraclejdk8
 
-before_script:
-  - pear install --alldeps pear/PHP_CodeSniffer
-  - phpenv rehash
+android:
+  components:
+    - platform-tools
+    - tools
+    - build-tools-23.0.1
+    - build-tools-22.0.1
+    - android-23
+    - android-22
+    - extra
+    - extra-android-support
+    - extra-google-google_play_services
+    - extra-google-m2repository
+    - extra-android-m2repository
+    - addon-google_apis-google-23
+    - addon-google_apis-google-22
 
-script:
-  - phpcs --version
-  - which phpcs
-  - which php
-  - echo hola
+script: echo "hola"
