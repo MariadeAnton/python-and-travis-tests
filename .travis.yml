@@ -1,20 +1,17 @@
-sudo: false
-language: android
+language: node_js
+node_js: '5'
 
-jdk: oraclejdk8
+matrix:
+  include:
+    - os: linux
+      sudo: false
+    - os: linux
+      sudo: required
+    - os: linux
+      sudo: required
+      dist: precise
+    - os: linux
+      sudo: required
+      dist: trusty
 
-android:
-  components:
-    - build-tools-23.0.1
-    - build-tools-22.0.1
-    - android-23
-    - android-22
-    - extra
-    - extra-android-support
-    - extra-google-google_play_services
-    - extra-google-m2repository
-    - extra-android-m2repository
-    - addon-google_apis-google-23
-    - addon-google_apis-google-22
-
-script: echo "hola"
+script: echo hello
