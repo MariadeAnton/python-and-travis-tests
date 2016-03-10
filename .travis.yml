@@ -9,9 +9,6 @@ matrix:
       sudo: required
     - os: linux
       sudo: required
-      dist: precise
-    - os: linux
-      sudo: required
       dist: trusty
 
 script: echo hello
