@@ -1,5 +1,9 @@
-language: node_js
-node_js: '5'
+language: elixir
+
+elixir:
+  - 1.2.0
+otp_release:
+  - 18.0
 
 matrix:
   include:
@@ -10,5 +14,9 @@ matrix:
     - os: linux
       sudo: required
       dist: trusty
+
+before install:
+  - nvm install 5.7.1
+  - nvm use 5.7.1
 
 script: echo hello
