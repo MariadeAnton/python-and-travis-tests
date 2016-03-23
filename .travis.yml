@@ -3,4 +3,4 @@ language: ruby
 install: true
 
 script: 
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo $NO || false'
+  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo $NO || true'
