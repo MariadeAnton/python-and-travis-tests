@@ -1,14 +1,6 @@
-language: node_js
-node_js: '5'
+language: ruby
 
-matrix:
-  include:
-    - os: linux
-      sudo: false
-    - os: linux
-      sudo: required
-    - os: linux
-      sudo: required
-      dist: trusty
+install: true
 
-script: echo hello
+script: 
+  - [ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo hola || false
