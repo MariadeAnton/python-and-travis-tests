@@ -3,4 +3,6 @@ language: ruby
 install: true
 
 script: 
-  - '[ "${TRAVIS_PULL_REQUEST}" = "false" ] && echo $NO || true'
+  - ls
+  - cd $TRAVIS_BUILD_DIR
+  - ls
