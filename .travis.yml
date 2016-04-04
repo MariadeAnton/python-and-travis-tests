@@ -1,22 +1,10 @@
 language: generic
-matrix:
-  include:
-    - env: AG_VER=master
-      os: linux
-      sudo: false
-      addons: &vim74
-        apt:
-          packages:
-            - vim
-            - automake
-            - pkg-config
-            - libpcre3-dev
-            - zlib1g-dev
-      install: true
-      script: echo hola
-    - env: AG_VER=0.31.0
-      os: linux
-      sudo: false
-      addons: *vim74
-      install: true
-      script: echo hola
+sudo: false
+
+script:
+  - touch hola.txt
+
+addons:
+  artifacts:
+    s3_region: "us-west-2"
+    branch: master
