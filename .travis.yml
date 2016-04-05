@@ -15,5 +15,4 @@ deploy:
   bucket: $ARTIFACTS_BUCKET
   upload-dir: folder
   skip_cleanup: true
-  on:
-    branch: Mda_deploy_s3
+  all_branches: true
