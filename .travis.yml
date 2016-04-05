@@ -3,8 +3,14 @@ sudo: false
 
 script:
   - touch hola.txt
+  - mkdir folder
+  - cd folder
+  - touch hi.txt
+  - cd. .
 
-addons:
-  artifacts:
-    branch: master
-    s3_region: "us-west-2"
+deploy:
+  provider: s3
+  access_key_id: $ARTIFACTS_KEY
+  secret_access_key: $ARTIFACTS_SECRET
+  bucket: $ARTIFACTS_BUCKET
+  upload-dir: folder
