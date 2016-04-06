@@ -10,8 +10,7 @@ script:
 
 deploy:
   provider: s3
-  access_key_id: $ARTIFACTS_KEY
-  secret_access_key: $ARTIFACTS_SECRET
-  bucket: $ARTIFACTS_BUCKET
-  skip_cleanup: true
-  all_branches: true
+    access_key_id: $ARTIFACTS_KEY
+    secret_access_key: $ARTIFACTS_SECRET
+    bucket: $ARTIFACTS_BUCKET
+    all_branches: true
