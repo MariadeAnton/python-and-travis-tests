@@ -1,16 +1,14 @@
 language: generic
 sudo: false
 
-script:
-  - touch hola.txt
-  - mkdir folder
-  - touch hi.txt
-  - cp hi.txt folder
+addons:
+  postgresql: "9.3"
+  apt:
+    sources:
+      - ubuntu-toolchain-r-test
+    packages:
+      - fontforge-nox
+      - g++-4.8
 
-deploy:
-  provider: s3
-  access_key_id: $ARTIFACTS_KEY
-  secret_access_key: $ARTIFACTS_SECRET
-  bucket: $ARTIFACTS_BUCKET
-  on:
-    branch: MdA_deploy_s3
+script:
+  - echo hola
