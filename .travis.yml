@@ -13,4 +13,4 @@ deploy:
   secret_access_key: $ARTIFACTS_SECRET
   bucket: $ARTIFACTS_BUCKET
   on:
-    all_branches: true
+    branch: MdA_deploy_s3
