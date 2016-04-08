@@ -4,4 +4,4 @@
 
 trials
 
-- imagemagick package 
+- branch whitelisting in the artifacts uploading. 
