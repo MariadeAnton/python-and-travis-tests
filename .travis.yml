@@ -4,5 +4,5 @@ language: c
 
 install: true
 script:
-  - travis wait 20 echo $TRAVIS_COMMIT_MSG
-  - travis wait 10 "echo $HOLA"
+  - travis_wait 20 echo $TRAVIS_COMMIT_MSG
+  - travis_wait 10 "echo $HOLA"
