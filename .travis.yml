@@ -2,12 +2,7 @@ sudo: false
 
 language: c
 
-addons:
-  apt:
-    sources:
-      - debian-sid
-    packages:
-      - liblapack3
-
 install: true
-script: echo hola
+script:
+  - travis wait 20 echo $TRAVIS_COMMIT_MSG
+  - travis wait 10 "echo $HOLA"
