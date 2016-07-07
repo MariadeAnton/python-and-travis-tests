@@ -1,6 +1,10 @@
 language: generic
 sudo: false
 
+env:
+  - BUILD_ENV=staging
+  - BUILD_ENV=develop
+
 script:
   - touch hola.txt
   - mkdir folder
@@ -15,4 +19,4 @@ deploy:
   bucket: $ARTIFACTS_BUCKET
   on:
     all_branches: true
-    condition: '"$TRAVIS_BRANCH" != "develop"'
+    condition: '"$BUILD_ENV" = "develop"'
