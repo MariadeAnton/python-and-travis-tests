@@ -14,4 +14,4 @@ deploy:
   secret_access_key: $ARTIFACTS_SECRET
   bucket: $ARTIFACTS_BUCKET
   on:
-    condition: "$TRAVIS_BRANCH = $MY_BRANCH"
+    condition: '"$TRAVIS_BRANCH" != "develop"'
