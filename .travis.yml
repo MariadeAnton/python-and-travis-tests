@@ -14,4 +14,4 @@ deploy:
   secret_access_key: $ARTIFACTS_SECRET
   bucket: $ARTIFACTS_BUCKET
   on:
-    branch: MdA_deploy_s3
+    branch: - /^MdA\/.+$/
