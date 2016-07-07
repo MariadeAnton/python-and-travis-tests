@@ -6,6 +6,7 @@ script:
   - mkdir folder
   - touch hi.txt
   - cp hi.txt folder
+  - echo hi
 
 deploy:
   provider: s3
