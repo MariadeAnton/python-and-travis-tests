@@ -6,11 +6,7 @@ env:
   - BUILD_ENV=develop
 
 script:
-  - touch hola.txt
-  - mkdir folder
-  - touch hi.txt
-  - cp hi.txt folder
-  - echo hi
+  - travis wait fail this build
 
 deploy:
   provider: s3
