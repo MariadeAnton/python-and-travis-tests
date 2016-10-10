@@ -15,4 +15,4 @@ deploy:
   bucket: $ARTIFACTS_BUCKET
 on:
     all_branches: true
-    condition: '"$TRAVIS_BRANCH"!="develop"'
+    condition: [[ $TRAVIS_BRANCH != ^develop/ ]]
