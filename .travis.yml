@@ -6,13 +6,13 @@ env:
   - BUILD_ENV=develop
 
 script:
-  - travis wait fail this build
+  - echo hola
 
 deploy:
   provider: s3
   access_key_id: $ARTIFACTS_KEY
   secret_access_key: $ARTIFACTS_SECRET
   bucket: $ARTIFACTS_BUCKET
-  on:
+on:
     all_branches: true
-    condition: '"$BUILD_ENV" = "develop"'
+    condition: '"$TRAVIS_BRANCH" != "develop"'
