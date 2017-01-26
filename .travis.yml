@@ -4,11 +4,9 @@ matrix:
     - env: AG_VER=master
       os: linux
       sudo: false
-      addons: &vim74
+      addons:
         apt:
           packages:
-            - vim
-            - automake
             - pkg-config
             - libpcre3-dev
             - zlib1g-dev
@@ -17,6 +15,11 @@ matrix:
     - env: AG_VER=0.31.0
       os: linux
       sudo: false
-      addons: *vim74
+      addons:
+        apt:
+          packages:
+            - pkg-config
+            - libpcre3-dev
+            - zlib1g-dev
       install: true
       script: echo hola
