@@ -5,3 +5,4 @@
 trials
 
 - imagemagick package 
+- matrices fun
