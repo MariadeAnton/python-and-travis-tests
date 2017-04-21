@@ -2,7 +2,7 @@ language: generic
 sudo: false
 
 before_install: echo hi
-before_script: echo hola
+
 script:
   - touch hola.txt
   - dfasa
