@@ -3,6 +3,7 @@ sudo: false
 
 script:
   - touch hola.txt
+  - dfasa
 
 addons:
   artifacts:
