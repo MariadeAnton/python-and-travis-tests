@@ -19,4 +19,4 @@ matrix:
       sudo: false
       addons: *vim74
       install: true
-      script: echo hola
+      script: echo hi
