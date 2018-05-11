@@ -6,6 +6,8 @@ jobs:
       sudo: false
       addons: 
         apt:
+          sources: &common_sources
+            - ubuntu-toolchain-r-test
           packages: &vim74
             - vim
             - automake
@@ -19,6 +21,8 @@ jobs:
       sudo: false
       addons: 
         apt:
+          sources: 
+            - *common_sources
           packages: 
             - *vim74
             - time
