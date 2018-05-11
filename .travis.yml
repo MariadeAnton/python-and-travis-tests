@@ -19,6 +19,8 @@ matrix:
       sudo: false
       addons: 
         apt:
-          packages: *vim74
+          packages: 
+            - *vim74
+            - time
       install: true
       script: echo hi
