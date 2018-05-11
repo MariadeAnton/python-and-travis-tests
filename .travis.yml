@@ -4,9 +4,9 @@ matrix:
     - env: AG_VER=master
       os: linux
       sudo: false
-      addons: &vim74
+      addons: 
         apt:
-          packages:
+          packages: &vim74
             - vim
             - automake
             - pkg-config
@@ -17,6 +17,8 @@ matrix:
     - env: AG_VER=0.31.0
       os: linux
       sudo: false
-      addons: *vim74
+      addons: 
+        apt:
+          packages: *vim74
       install: true
       script: echo hi
