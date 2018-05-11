@@ -23,6 +23,7 @@ jobs:
         apt:
           sources: 
             - *common_sources
+            - lucid
           packages: 
             - *vim74
             - time
