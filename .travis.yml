@@ -1,5 +1,5 @@
 language: generic
-matrix:
+jobs:
   include:
     - env: AG_VER=master
       os: linux
