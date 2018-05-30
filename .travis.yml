@@ -21,11 +21,9 @@ jobs:
       sudo: false
       addons: 
         apt:
-          sources: 
-            - *common_sources
+          sources: *common_sources
             - lucid
-          packages: 
-            - *vim74
+          packages: *vim74
             - time
       install: true
       script: echo hi
