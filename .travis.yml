@@ -3,8 +3,7 @@ jobs:
   include:
     - env: AG_VER=master
       os: linux
-      sudo: false
-      addons: 
+      addons:
         apt:
           sources: &common_sources
             - ubuntu-toolchain-r-test
@@ -18,13 +17,12 @@ jobs:
       script: echo hola
     - env: AG_VER=0.31.0
       os: linux
-      sudo: false
-      addons: 
+      addons:
         apt:
-          sources: 
+          sources:
             - *common_sources
             - lucid
-          packages: 
+          packages:
             - *vim74
             - time
       install: true
