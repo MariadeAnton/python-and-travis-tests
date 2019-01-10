@@ -1,4 +1,4 @@
-language: generic
+language: python
 jobs:
   include:
     - env: AG_VER=master
