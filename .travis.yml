@@ -26,4 +26,4 @@ jobs:
             - *vim74
             - time
       install: true
-      script: echo hi
+      script: echo hola
