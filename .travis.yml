@@ -1,29 +1,6 @@
-language: python
-jobs:
-  include:
-    - env: AG_VER=master
-      os: linux
-      addons:
-        apt:
-          sources: &common_sources
-            - ubuntu-toolchain-r-test
-          packages: &vim74
-            - vim
-            - automake
-            - pkg-config
-            - libpcre3-dev
-            - zlib1g-dev
-      install: true
-      script: echo hola
-    - env: AG_VER=0.31.0
-      os: linux
-      addons:
-        apt:
-          sources:
-            - *common_sources
-            - lucid
-          packages:
-            - *vim74
-            - time
-      install: true
-      script: echo hi
+language: ruby
+
+import:
+  - .travis/all-the-rubies.yml
+  - .travis/only-some-branches.yml
+  - .travis/publish-rubygem.yml
