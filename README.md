@@ -1,6 +1,6 @@
-# container-based-travis-ci
+# Python and Travis CI tests
 
-[![Build Status](https://travis-ci.org/MariadeAnton/container-based-travis-ci.svg?branch=master)](https://travis-ci.org/MariadeAnton/container-based-travis-ci)
+[![Build Status](https://travis-ci.com/MariadeAnton/python-and-travis-tests.svg?branch=master)](https://travis-ci.com/MariadeAnton/python-and-travis-tests)
 
 trials
 
